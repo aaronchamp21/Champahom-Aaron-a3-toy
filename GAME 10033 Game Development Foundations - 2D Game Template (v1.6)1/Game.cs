@@ -13,7 +13,8 @@ public class Game
 
     Road road = new Road();
 
-    Car car = new Car();
+    Car car1 = new Car();
+
 
     Tree tree1 = new Tree();
     Tree tree2 = new Tree();
@@ -48,6 +49,12 @@ public class Game
         tree3.speed = 3;
         tree4.speed = 3;
         tree5.speed = 3;
+
+        car1.x = 100;
+
+
+        car1.speed = 3;
+
     }
 
     public void Update()
@@ -55,8 +62,9 @@ public class Game
         Window.ClearBackground(200, 230, 255);
 
         road.Update();
-       
-        car.Update();
+
+        car1.Update();
+
 
         tree1.Update();
         tree2.Update();
